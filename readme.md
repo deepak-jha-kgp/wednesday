@@ -37,6 +37,14 @@ To try it out, you need to:
 2. The sidebar will automatically summarize the selected text and fetch relevant links.
 3. Use the text-to-speech buttons to listen to the summary.
 
+### TODO
+
+- Add global settings for speech and voice.
+- Maintain global state for minimizing.
+- Add better SERP (Search Engine Results Page) APIs.
+- Summarize if selected text resembles news.
+- Add Arxiv and Wikipedia search results.
+
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
