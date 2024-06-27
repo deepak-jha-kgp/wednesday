@@ -1,0 +1,47 @@
+{
+    "manifest_version": 3,
+    "name": "Wednesday",
+    "version": "1.0",
+    "description": "Automatically summarizes web page content.",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "tabs",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://www.reddit.com/*",
+      "https://api.duckduckgo.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "icons/volume.png",
+          "icons/volume-down.png",
+          "icons/repeat.png"
+        ],
+        "matches": ["<all_urls>"],
+        "type": "image/png"
+      }
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }

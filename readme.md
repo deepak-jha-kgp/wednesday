@@ -1,0 +1,2 @@
+# wednesday
+ Local AI Assistant
