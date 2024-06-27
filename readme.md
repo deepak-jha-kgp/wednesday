@@ -9,6 +9,19 @@
 - **AI-Powered Summaries**: Get concise AI-generated summaries of selected content.
 - **Related Links**: View and access related links from Reddit and search engines.
 - **Text-to-Speech**: Listen to the summaries using text-to-speech functionality.
+![Screenshot](screenshots/screenshot.png)
+
+
+## Requirements 
+To try it out, you need to:
+
+- be on Mac or Windows
+- be on Chrome dev / canary (version >= 127)
+- enable chrome://flags/#optimization-guide-on-device-model (set to Enabled BypassPerfRequirement)
+- enable chrome://flags/#prompt-api-for-gemini-nano (set to Enabled)
+- if this fails, try chrome://components and look for On Device Model
+    this should have a version which is not 0.0.0.0 -- you can bang on the update button if you'd like (don't bang too hard)
+    eventually this will have the right value (after downloading the model), then you'll need to relaunch chrome and try again
 
 ## Installation
 
